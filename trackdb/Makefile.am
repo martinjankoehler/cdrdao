@@ -45,7 +45,7 @@ PCCTS_GEN_FILES = \
 	TocParserTokens.h
 
 
-nodist_libtrackdb_a_SOURCES = ${PCCTS_GEN_FILES} @pcctsinc@/AParser.cpp @pcctsinc@/DLexerBase.cpp @pcctsinc@/ATokenBuffer.cpp 
+nodist_libtrackdb_a_SOURCES = ${PCCTS_GEN_FILES} AParser.cpp DLexerBase.cpp ATokenBuffer.cpp
 
 AM_CPPFLAGS = -I@pcctsinc@
 ANTLR = @antlr_path@

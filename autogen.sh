@@ -1,6 +1,23 @@
 #! /bin/sh
 # Run this to generate the configure script and unpack needed packages
 
+cleanup() {
+    echo Cleaning up.
+    make clean > /dev/null >& /dev/null
+    make distclean > /dev/null >& /dev/null
+    find . -name Makefile.in -exec rm {} \;
+    rm -f Makefile dao/Makefile gcdmaster/Makefile pccts/antlr/Makefile pccts/dlg/Makefile trackdb/Makefile utils/Makefile
+    find . -name .deps -exec rm -r {} \;
+    rm -f aclocal.m4 configure config.h config.log stamp-h1 specs/cdrdao.fedora.spec config.status gcdmaster/gcdmaster.schemas
+    rm -fr autom4te.cache
+    rm -rf scsilib
+}
+
+if (( $# > 0 )) && [[ "$1" == "clean" ]]; then
+    cleanup
+    exit 0
+fi
+
 # This deletes the (old) scsilib dir and unpacks the latest version
 if test -e scsilib.tar.gz ; then
   rm -rf scsilib
