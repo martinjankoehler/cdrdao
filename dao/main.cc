@@ -205,6 +205,67 @@ static HANDLE fh = NULL;
 static char devstr[10];
 #endif
 
+
+static int VERBOSE = 1;
+
+void message_args(int level, int addNewLine, const char *fmt, va_list args)
+{
+  long len = strlen(fmt);
+  char last = len > 0 ? fmt[len - 1] : 0;
+
+  if (level < 0) {
+    switch (level) {
+    case -1:
+      fprintf(stderr, "WARNING: ");
+      break;
+    case -2:
+      fprintf(stderr, "ERROR: ");
+      break;
+    case -3:
+      fprintf(stderr, "INTERNAL ERROR: ");
+      break;
+    default:
+      fprintf(stderr, "FATAL ERROR: ");
+      break;
+    }
+    vfprintf(stderr, fmt, args);
+    if (addNewLine) {
+      if (last != ' ' && last != '\r')
+	fprintf(stderr, "\n");
+    }
+
+    fflush(stderr);
+    if (level <= -10)
+      exit(1);
+  }
+  else if (level <= VERBOSE) {
+    vfprintf(stderr, fmt, args);
+
+    if (addNewLine) {
+      if (last != ' ' && last != '\r')
+	fprintf(stderr, "\n");
+    }
+
+    fflush(stderr);
+  }
+}
+
+void message(int level, const char *fmt, ...)
+{
+  va_list args;
+
+  va_start(args, fmt);
+
+  message_args(level, 1, fmt, args);
+
+  va_end(args);
+}
+
+
+
+
+
+
 static void printVersion()
 {
   log_message(2, "Cdrdao version %s - (C) Andreas Mueller <andreas@daneb.de>",
