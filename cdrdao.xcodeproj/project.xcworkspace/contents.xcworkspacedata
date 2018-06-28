@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:../pccts"
+      name = "pccts">
+      <Group
+         location = "group:antlr"
+         name = "antlr">
+         <FileRef
+            location = "group:antlr">
+         </FileRef>
+         <FileRef
+            location = "group:antlr.c">
+         </FileRef>
+         <FileRef
+            location = "group:antlr.o">
+         </FileRef>
+         <FileRef
+            location = "group:bits.c">
+         </FileRef>
+         <FileRef
+            location = "group:bits.o">
+         </FileRef>
+         <FileRef
+            location = "group:build.c">
+         </FileRef>
+         <FileRef
+            location = "group:build.o">
+         </FileRef>
+         <FileRef
+            location = "group:dumpcycles.c">
+         </FileRef>
+         <FileRef
+            location = "group:dumpcycles.o">
+         </FileRef>
+         <FileRef
+            location = "group:dumpnode.c">
+         </FileRef>
+         <FileRef
+            location = "group:dumpnode.o">
+         </FileRef>
+         <FileRef
+            location = "group:egman.c">
+         </FileRef>
+         <FileRef
+            location = "group:egman.o">
+         </FileRef>
+         <FileRef
+            location = "group:err.c">
+         </FileRef>
+         <FileRef
+            location = "group:err.o">
+         </FileRef>
+         <FileRef
+            location = "group:fcache.c">
+         </FileRef>
+         <FileRef
+            location = "group:fcache.o">
+         </FileRef>
+         <FileRef
+            location = "group:fset.c">
+         </FileRef>
+         <FileRef
+            location = "group:fset.o">
+         </FileRef>
+         <FileRef
+            location = "group:fset2.c">
+         </FileRef>
+         <FileRef
+            location = "group:fset2.o">
+         </FileRef>
+         <FileRef
+            location = "group:gen.c">
+         </FileRef>
+         <FileRef
+            location = "group:gen.o">
+         </FileRef>
+         <FileRef
+            location = "group:generic.h">
+         </FileRef>
+         <FileRef
+            location = "group:globals.c">
+         </FileRef>
+         <FileRef
+            location = "group:globals.o">
+         </FileRef>
+         <FileRef
+            location = "group:hash.c">
+         </FileRef>
+         <FileRef
+            location = "group:hash.h">
+         </FileRef>
+         <FileRef
+            location = "group:hash.o">
+         </FileRef>
+         <FileRef
+            location = "group:lex.c">
+         </FileRef>
+         <FileRef
+            location = "group:lex.o">
+         </FileRef>
+         <FileRef
+            location = "group:main.c">
+         </FileRef>
+         <FileRef
+            location = "group:main.o">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile.am">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile.in">
+         </FileRef>
+         <FileRef
+            location = "group:misc.c">
+         </FileRef>
+         <FileRef
+            location = "group:misc.o">
+         </FileRef>
+         <FileRef
+            location = "group:mode.h">
+         </FileRef>
+         <FileRef
+            location = "group:mrhoist.c">
+         </FileRef>
+         <FileRef
+            location = "group:mrhoist.o">
+         </FileRef>
+         <FileRef
+            location = "group:pred.c">
+         </FileRef>
+         <FileRef
+            location = "group:pred.o">
+         </FileRef>
+         <FileRef
+            location = "group:proto.h">
+         </FileRef>
+         <FileRef
+            location = "group:scan.c">
+         </FileRef>
+         <FileRef
+            location = "group:scan.o">
+         </FileRef>
+         <FileRef
+            location = "group:set.c">
+         </FileRef>
+         <FileRef
+            location = "group:set.o">
+         </FileRef>
+         <FileRef
+            location = "group:stdpccts.h">
+         </FileRef>
+         <FileRef
+            location = "group:syn.h">
+         </FileRef>
+         <FileRef
+            location = "group:tokens.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:dlg"
+         name = "dlg">
+         <FileRef
+            location = "group:automata.c">
+         </FileRef>
+         <FileRef
+            location = "group:automata.o">
+         </FileRef>
+         <FileRef
+            location = "group:dlg">
+         </FileRef>
+         <FileRef
+            location = "group:dlg.h">
+         </FileRef>
+         <FileRef
+            location = "group:dlg_a.c">
+         </FileRef>
+         <FileRef
+            location = "group:dlg_a.o">
+         </FileRef>
+         <FileRef
+            location = "group:dlg_p.c">
+         </FileRef>
+         <FileRef
+            location = "group:dlg_p.o">
+         </FileRef>
+         <FileRef
+            location = "group:err.c">
+         </FileRef>
+         <FileRef
+            location = "group:err.o">
+         </FileRef>
+         <FileRef
+            location = "group:main.c">
+         </FileRef>
+         <FileRef
+            location = "group:main.o">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile.am">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile.in">
+         </FileRef>
+         <FileRef
+            location = "group:mode.h">
+         </FileRef>
+         <FileRef
+            location = "group:output.c">
+         </FileRef>
+         <FileRef
+            location = "group:output.o">
+         </FileRef>
+         <FileRef
+            location = "group:relabel.c">
+         </FileRef>
+         <FileRef
+            location = "group:relabel.o">
+         </FileRef>
+         <FileRef
+            location = "group:set.c">
+         </FileRef>
+         <FileRef
+            location = "group:set.o">
+         </FileRef>
+         <FileRef
+            location = "group:stdpccts.h">
+         </FileRef>
+         <FileRef
+            location = "group:support.c">
+         </FileRef>
+         <FileRef
+            location = "group:support.o">
+         </FileRef>
+         <FileRef
+            location = "group:tokens.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:h"
+         name = "h">
+         <FileRef
+            location = "group:antlr.h">
+         </FileRef>
+         <FileRef
+            location = "group:AParser.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:AParser.h">
+         </FileRef>
+         <FileRef
+            location = "group:ast.h">
+         </FileRef>
+         <FileRef
+            location = "group:ASTBase.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:ASTBase.h">
+         </FileRef>
+         <FileRef
+            location = "group:AToken.h">
+         </FileRef>
+         <FileRef
+            location = "group:ATokenBuffer.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:ATokenBuffer.h">
+         </FileRef>
+         <FileRef
+            location = "group:ATokenStream.h">
+         </FileRef>
+         <FileRef
+            location = "group:ATokPtr.h">
+         </FileRef>
+         <FileRef
+            location = "group:ATokPtrImpl.h">
+         </FileRef>
+         <FileRef
+            location = "group:BufFileInput.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:BufFileInput.h">
+         </FileRef>
+         <FileRef
+            location = "group:charbuf.h">
+         </FileRef>
+         <FileRef
+            location = "group:charptr.h">
+         </FileRef>
+         <FileRef
+            location = "group:config.h">
+         </FileRef>
+         <FileRef
+            location = "group:DLexer.h">
+         </FileRef>
+         <FileRef
+            location = "group:DLexerBase.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:DLexerBase.h">
+         </FileRef>
+         <FileRef
+            location = "group:DLG_stream_input.h">
+         </FileRef>
+         <FileRef
+            location = "group:dlgauto.h">
+         </FileRef>
+         <FileRef
+            location = "group:dlgdef.h">
+         </FileRef>
+         <FileRef
+            location = "group:err.h">
+         </FileRef>
+         <FileRef
+            location = "group:int.h">
+         </FileRef>
+         <FileRef
+            location = "group:PBlackBox.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_assert.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_iostream.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_istream.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_setjmp.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_stdarg.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_stdio.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_stdlib.h">
+         </FileRef>
+         <FileRef
+            location = "group:pccts_string.h">
+         </FileRef>
+         <FileRef
+            location = "group:PCCTSAST.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:PCCTSAST.h">
+         </FileRef>
+         <FileRef
+            location = "group:pcctscfg.h">
+         </FileRef>
+         <FileRef
+            location = "group:set.h">
+         </FileRef>
+         <FileRef
+            location = "group:slist.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:SList.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Makefile">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.am">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.in">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:../config.h">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
