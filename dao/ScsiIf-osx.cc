@@ -52,17 +52,19 @@ ScsiIf::ScsiIf(const char *name)
 	impl_ = new ScsiIfImpl;
 	impl_->num_ = 0;
 	impl_->path_ = NULL;
-	len = strlen(name);
-	if (len) {
-		if (isdigit(name[0])) {
-			/* Compatibility mode. Just add bus+targ+lun */
-			if (sscanf(name, "%i,%i,%i%n", &bus, &targ, &lun, &count) == 3 && count == len) {
-				if ((bus >= 0) && (targ >= 0) && (lun >= 0))
-					impl_->num_ = 1 + bus + targ + lun;	
+	if (name) {
+		len = strlen(name);
+		if (len) {
+			if (isdigit(name[0])) {
+				/* Compatibility mode. Just add bus+targ+lun */
+				if (sscanf(name, "%i,%i,%i%n", &bus, &targ, &lun, &count) == 3 && count == len) {
+					if ((bus >= 0) && (targ >= 0) && (lun >= 0))
+						impl_->num_ = 1 + bus + targ + lun;
+				}
+			} else {
+				/* Native mode. Take name as IOreg path */
+				impl_->path_ = strdupCC(name);
 			}
-		} else {
-			/* Native mode. Take name as IOreg path */
-			impl_->path_ = strdupCC(name);
 		}
 	}
 	impl_->object_ = 0;
